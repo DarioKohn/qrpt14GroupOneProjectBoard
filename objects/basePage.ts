@@ -29,6 +29,16 @@ export class BasePage {
         let element = await this.driver.findElement(elementBy); 
         await this.driver.wait(until.elementIsVisible(element)); 
         return element; 
+    };
+    //checks if checkbox is checked, but not sure this is set up properly
+    async isSelected(elementBy: By): Promise<Boolean> {
+        return await this.driver.wait(until.elementLocated(elementBy)).isSelected();
+    };
+
+    async sendKeys(elementBy: By, keys: any): Promise<void> {
+        let input = await this.getElement(elementBy); 
+        await input.clear(); 
+        return input.sendKeys(keys); 
     }; 
     async click(elementBy: By): Promise<void> {
         return (await this.getElement(elementBy)).click(); 
@@ -52,5 +62,4 @@ export class BasePage {
         .move({origin: originElement, x:0, y:10, duration: moveDurationMS})
         .pause(moveDurationMS)
     }; 
-
 };
