@@ -24,7 +24,7 @@ describe("Testing AllRecipes for qrpt14 Group Project, testing pupular search bu
  test ("Popular Search Buttons", async () => {
     await page.scroll()
 await page.click(page.chxBtn);
-await fs.writeFile(`${__dirname}/psb1.png`,
+await fs.writeFile(`${__dirname}/psb-chicken.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
@@ -33,7 +33,7 @@ await fs.writeFile(`${__dirname}/psb1.png`,
 await page.click(page.homeBtn);
 await page.scroll()
 await page.click(page.smBtn);
-await fs.writeFile(`${__dirname}/psb2.png`,
+await fs.writeFile(`${__dirname}/psb-smoothies.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
@@ -43,7 +43,7 @@ await page.click(page.homeBtn);
 await page.scroll()
 await page.driver.sleep(2000);
 await page.click(page.banBrBtn);
-await fs.writeFile(`${__dirname}/psb3.png`,
+await fs.writeFile(`${__dirname}/psb-banana-bread.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
@@ -52,7 +52,7 @@ await fs.writeFile(`${__dirname}/psb3.png`,
 await page.click(page.homeBtn);
 await page.scroll()
 await page.click(page.lasBtn);
-await fs.writeFile(`${__dirname}/psb4.png`,
+await fs.writeFile(`${__dirname}/psb-lasagna.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
@@ -61,7 +61,7 @@ await fs.writeFile(`${__dirname}/psb4.png`,
 await page.click(page.homeBtn);
 await page.scroll()
 await page.click(page.panBtn);
-await fs.writeFile(`${__dirname}/psb5.png`,
+await fs.writeFile(`${__dirname}/psb-pancakes.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
@@ -70,7 +70,7 @@ await fs.writeFile(`${__dirname}/psb5.png`,
 await page.click(page.homeBtn);
 await page.scroll()
 await page.click(page.meatBtn);
-await fs.writeFile(`${__dirname}/psb6.png`,
+await fs.writeFile(`${__dirname}/psb-meatloaf.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
@@ -79,7 +79,7 @@ await fs.writeFile(`${__dirname}/psb6.png`,
 await page.click(page.homeBtn);
 await page.scroll()
 await page.click(page.cookBtn);
-await fs.writeFile(`${__dirname}/psb7.png`,
+await fs.writeFile(`${__dirname}/psb-cookies.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
@@ -88,7 +88,7 @@ await fs.writeFile(`${__dirname}/psb7.png`,
 await page.click(page.homeBtn);
 await page.scroll()
 await page.click(page.chilBtn);
-await fs.writeFile(`${__dirname}/psb8.png`,
+await fs.writeFile(`${__dirname}/psb-chili.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
