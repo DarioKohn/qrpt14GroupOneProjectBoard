@@ -5,15 +5,6 @@ const fs = require('fs');
 describe("Testing AllRecipes for qrpt14 Group Project, testing pupular search buttons", () => {
 
     //Purpose of this test is to check if all of the popular search buttons work
-    //First click the chicken button and save screenshot, then home button
-    //then click the smoothies button and save screenshot, then home button
-    //then click the banana bread butto and save screenshot, then home button
-    //then click the lasagna button and save screenshot, then home button
-    //then click the pancakes button and save screenshot, then home button
-    //then click the meatloaf button and save screenshot, then home button
-    //then click the cookies button and save screenshot, then home button
-    //then click the chili button and save screenshot, then close the browser
-
 
     beforeEach(async () => {
         await page.navigate();
