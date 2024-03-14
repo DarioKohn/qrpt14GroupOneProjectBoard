@@ -22,7 +22,7 @@ await fs.writeFile(`${__dirname}/psb-chicken.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Chicken Save Succesful')
     });
     //Go back to the home page
 await page.click(page.homeBtn);
@@ -35,7 +35,7 @@ await fs.writeFile(`${__dirname}/psb-smoothies.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Smoothie Save Succesful')
     });
     //Go back to the home page
 await page.click(page.homeBtn);
@@ -50,7 +50,7 @@ await fs.writeFile(`${__dirname}/psb-banana-bread.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Banana Bread Save Succesful')
     });
     //Back to the home page again
 await page.click(page.homeBtn);
@@ -63,7 +63,7 @@ await fs.writeFile(`${__dirname}/psb-lasagna.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Lasagna Save Succesful')
     });
     //Back to the home page again
 await page.click(page.homeBtn);
@@ -76,7 +76,7 @@ await fs.writeFile(`${__dirname}/psb-pancakes.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Pancakes Save Succesful')
     });
     //Back to the home page again
 await page.click(page.homeBtn);
@@ -89,7 +89,7 @@ await fs.writeFile(`${__dirname}/psb-meatloaf.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Meatloaf Save Succesful')
     });
     //Back to the home page again
 await page.click(page.homeBtn);
@@ -102,7 +102,7 @@ await fs.writeFile(`${__dirname}/psb-cookies.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Cookies Save Succesful')
     });
     //Back to the home page again
 await page.click(page.homeBtn);
@@ -115,7 +115,7 @@ await fs.writeFile(`${__dirname}/psb-chili.png`,
     await page.driver.takeScreenshot(), "base64",
     (e) => {
         if (e) console.error(e)
-        else console.log('Save Succesful')
+        else console.log('Chili Save Succesful')
     });
 }); 
 });
