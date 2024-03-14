@@ -1,7 +1,7 @@
 import { BasePage } from "./basePage"; 
 import { By } from "selenium-webdriver";
 
-export class chrisobject extends BasePage {
+export class chrisObjectsPage extends BasePage {
     originalRecipes:By = By.xpath(`//div[text()="Original Recipes"]`) //('//div[text()="Original Recipes"]')
     searchbar:By = By.name('q')
     recipecard:By = By.id('mntl-card-list-items_1-0')
@@ -17,7 +17,7 @@ export class chrisobject extends BasePage {
     kitchenTips:By = By.xpath('//li[@class = "mntl-header-nav__list-item"][6]')
     news:By = By.xpath('//li[@class = "mntl-header-nav__list-item"][7]')
     features:By = By.xpath('//li[@class = "mntl-header-nav__list-item"][8]')
-    aboutUs:By = By.xpath('//li[@class = "mntl-header-nav__list-item"][9]')
+    aboutUs:By = By.xpath('//div[@class = "mntl-header-nav__list-item mntl-header-nav__list-item-about-us"]')
 
     aBtn:By = By.xpath('//li[@class = "mntl-alphabetical-nav__list-item"][1]')
     bBtn:By = By.xpath('//li[@class = "mntl-alphabetical-nav__list-item"][2]')
@@ -55,5 +55,8 @@ export class chrisobject extends BasePage {
             .move({ origin: frame })
             .perform();
 
+    };
+    async search(searchItem: string) {
+        return this.setInput(this.searchbar,`${searchItem}\n` );
     };
 };
