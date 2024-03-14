@@ -29,7 +29,7 @@ describe("Testing AllRecipes for qrpt14 Group Project, testing Newsletter Signup
         ,await page.driver.takeScreenshot(), "base64",
         (e) => {
             if (e) console.error(e)
-            else console.log('Save Succesful')
+            else console.log('Test One Save Succesful')
         });
         //Close the Popup with the excape key
         await page.driver.actions().sendKeys("\uE00C").perform();   
@@ -52,7 +52,7 @@ describe("Testing AllRecipes for qrpt14 Group Project, testing Newsletter Signup
         await page.driver.takeScreenshot(), "base64",
         (e) => {
             if (e) console.error(e)
-            else console.log('Save Succesful')
+            else console.log('Test Two Save Succesful')
         });
     })
 });
